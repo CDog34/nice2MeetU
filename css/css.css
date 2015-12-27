@@ -1,0 +1,90 @@
+html,body{
+	margin: 0;
+	padding:0;
+	height:100%;
+	width:100%;
+	font-family:Microsoft YaHei;
+	color:azure;
+}
+body{
+	background-color: #66ccff;
+}
+#duang{
+	height: 100%;
+	width:100%;
+	position: fixed;
+	top:0;
+	left:0;
+	z-index: -999;
+}
+.headline{
+
+	position: absolute;
+	top:50%;
+	left:50%;
+	text-align: center;
+	-webkit-transform: translate(-50%, -50%);
+	-moz-transform: translate(-50%, -50%);
+	-ms-transform: translate(-50%, -50%);
+	-o-transform: translate(-50%, -50%);
+	transform: translate(-50%, -50%);
+}
+.headline .big{
+	font-size: 2em;
+}
+.headline h2{
+	padding-left:100px;
+}
+
+.maybe .big{
+	font-size: 2em;
+}
+.maybe{
+	margin-top: 40px;
+}
+a{
+	text-decoration: none;
+	color: azure;
+}
+.linklist{
+	list-style: none;
+}
+.linklist a,.linklist li,.linklist .title{
+	display: inline-block;
+}
+.linklist a{
+	padding:5px;
+}
+.linklist a:hover{
+	background-color: rgba(240, 255, 255, 0.4);
+}
+.linklist li{
+	margin: 5px 10px;
+}
+.icon {
+	font-size:2em !important;
+	padding-right:10px;
+}
+.copy{
+	position: absolute;
+	bottom: 10px;
+	width:100%;
+	text-align: center;
+}
+@media (max-width: 767px){
+	.headline {
+		position: relative;
+		margin-top: 5em;
+	}
+	ul{
+		padding-left: 0;
+	}
+	.copy{
+		position: fixed;
+		bottom:10px;
+	}
+}
+
+li h3,li a{
+	margin:0 auto;
+}
