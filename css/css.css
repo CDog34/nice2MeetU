@@ -54,6 +54,11 @@ a{
 }
 .linklist a{
 	padding:5px;
+	-webkit-transition: background-color .5s;
+	-moz-transition: background-color .5s;
+	-ms-transition: background-color .5s;
+	-o-transition: background-color .5s;
+	transition: background-color .5s;
 }
 .linklist a:hover{
 	background-color: rgba(240, 255, 255, 0.4);
@@ -70,6 +75,7 @@ a{
 	bottom: 10px;
 	width:100%;
 	text-align: center;
+	opacity:.4;
 }
 @media (max-width: 767px){
 	.headline {
