@@ -14,7 +14,7 @@ for (var i= 0;i<tags.length;i++){
   var xSeed=Math.round(Math.random());
   tags[i].style.left=Math.round(Math.random()*(viewWidth/2-PADDING-BLANK_CENTER/2))+(1-xSeed)*PADDING+xSeed*(viewWidth/2+BLANK_CENTER/2)+"px";
   tags[i].style.top=Math.round(Math.random()*(viewHeight-PADDING*2))+PADDING+"px";
-  tags[i].style.fontSize=Math.round(Math.random()*(MAX_FONT-MIN_FONT))+MIN_FONT+"em";
+  tags[i].style.fontSize=Math.random()*(MAX_FONT-MIN_FONT)+MIN_FONT+"em";
 
 }
 console.log('Tags Get Daze√');
