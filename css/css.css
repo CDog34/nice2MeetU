@@ -75,7 +75,19 @@ a{
 	bottom: 10px;
 	width:100%;
 	text-align: center;
-	opacity:.4;
+	opacity:.6;
+}
+.copy a{
+	display: inline-block;
+	border-bottom:1px dotted azure;
+	-webkit-transition: font-size .5s;
+	-moz-transition: font-size .5s;
+	-ms-transition: font-size .5s;
+	-o-transition: font-size .5s;
+	transition: font-size .5s;
+}
+.copy a:hover{
+	font-size: 1.5em;
 }
 @media (max-width: 767px){
 	.headline {
