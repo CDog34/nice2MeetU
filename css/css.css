@@ -112,6 +112,11 @@ li h3,li a{
 	position: absolute;
 	margin: 0;
 	padding:0;
+	-webkit-transition: all .8s;
+	-moz-transition: all .8s;
+	-ms-transition: all .8s;
+	-o-transition: all .8s;
+	transition: all .8s;
 	-webkit-animation:poi 1.5s 1;
 	-o-animation:poi 1.5s 1;
 	animation:poi 1.5s 1;
