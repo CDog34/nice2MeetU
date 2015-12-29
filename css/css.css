@@ -6,16 +6,19 @@ html,body{
 	font-family:Microsoft YaHei;
 	color:azure;
 }
-body{
+#section1{
+    height:100%;
+    width:100%;
 	background-color: #66ccff;
+    position: relative;
 }
 #duang{
 	height: 100%;
 	width:100%;
-	position: fixed;
+	position: absolute;
 	top:0;
 	left:0;
-	z-index: -999;
+	z-index: 0;
 }
 .headline{
 
