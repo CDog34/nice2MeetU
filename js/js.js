@@ -50,11 +50,18 @@ function removeTags(){
         },800);
     }
 }
-function carouselTags(){
+
+var animeStart= null;
+var process=null;
+function carouselTags(t){
     removeTags();
     setTimeout(function () {
         showTags()
     },800)
+   setTimeout(function () {
+           window.requestAnimationFrame(carouselTags);
+   },7000)
+
 }
 function domReady(fn){
     if(document.addEventListener){
@@ -74,9 +81,10 @@ function domReady(fn){
 domReady(function () {
     initTags();
     showTags();
-    setInterval(function () {
-        carouselTags();
-    },7000)
+    setTimeout(function () {
+        window.requestAnimationFrame(carouselTags);
+    },7000);
+
 });
 
 
