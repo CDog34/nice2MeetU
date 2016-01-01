@@ -1,4 +1,4 @@
-'use strict'
+'use strict';
 particlesJS.load('duang', './js/pc.json', function() {
   console.log('每天都要萌萌哒~');
 });
@@ -51,13 +51,12 @@ function removeTags(){
     }
 }
 
-var animeStart= null;
-var process=null;
+
 function carouselTags(t){
     removeTags();
     setTimeout(function () {
         showTags()
-    },800)
+    },800);
    setTimeout(function () {
            window.requestAnimationFrame(carouselTags);
    },7000)
