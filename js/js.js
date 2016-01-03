@@ -4,7 +4,7 @@ particlesJS.load('duang', './js/pc.json', function() {
 });
 
 
-var tags=['技术宅','大学狗','小学生真是太棒了','小透明','萌萌哒','炮姐赛高','LL大法好','js大法好','中二病','非洲人','<del>Web全栈</del>','<del>可爱的</del>男孩子'];
+var tags=['技术宅','大学狗','小学生真是太棒了','小透明','萌萌哒','炮姐赛高','LL大法好','js大法好','中二病','非洲人','<del>可爱的</del>男孩子'];
 
 var view=document.getElementById('duang'),viewHeight=view.clientHeight,viewWidth=view.clientWidth,tagPointer=0;
 const PADDING=100,MAX_FONT= 2,MIN_FONT=0.9,BLANK_CENTER=500;
