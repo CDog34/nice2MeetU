@@ -3,8 +3,6 @@
   <component name="ChangeListManager">
     <list default="true" id="fcfd0bff-9ecb-4ea6-9bbe-d3e50eb3f5b2" name="Default" comment="">
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/index.html" afterPath="$PROJECT_DIR$/src/index.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/style/css.scss.css" afterPath="$PROJECT_DIR$/src/style/css.scss.css" />
     </list>
     <ignored path="cdog.em.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -506,7 +504,19 @@
       <option name="project" value="LOCAL" />
       <updated>1455629860136</updated>
     </task>
-    <option name="localTasksCounter" value="23" />
+    <task id="LOCAL-00023" summary="响应式优化">
+      <created>1455643725493</created>
+      <option name="number" value="00023" />
+      <option name="project" value="LOCAL" />
+      <updated>1455643725493</updated>
+    </task>
+    <task id="LOCAL-00024" summary="响应式优化">
+      <created>1455643752637</created>
+      <option name="number" value="00024" />
+      <option name="project" value="LOCAL" />
+      <updated>1455643752637</updated>
+    </task>
+    <option name="localTasksCounter" value="25" />
     <servers />
   </component>
   <component name="ToolWindowManager">
