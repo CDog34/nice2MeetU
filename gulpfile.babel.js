@@ -4,21 +4,24 @@ import autoprefix from 'gulp-autoprefixer';
 import plumber from 'gulp-plumber';
 import connect from 'gulp-connect';
 import babel from 'gulp-babel';
+import del from 'del';
+import usemin from 'gulp-usemin';
+import uglify from 'gulp-uglify';
 
 
 let base={
     src:'./src/',
-    dest:'./build'
+    dest:'build/'
 };
 
 let styleBase={
-    src:base.src+'/style/*.scss',
+    src:base.src+'/style/*.css',
     devDest:".tmp/style",
     buildDest:base.dest
 };
 
 let scriptBase={
-    src:base.src+'/js/*.es6',
+    src:base.src+'/js/js.js',
     devDest:".tmp/js",
     buildDest:base.dest
 };
@@ -48,12 +51,43 @@ gulp.task('dev-connect',()=>{
     connect.server({
         port:8888,
         livereload:true,
-        root:['src/','.tmp/']
+        root:['.tmp/','src/']
     })
 });
 gulp.task('dev-watch',()=>{
     gulp.watch(styleBase.src,['dev-styles']);
     gulp.watch(scriptBase.src,['dev-scripts']);
 });
-gulp.task('dev',['dev-connect','dev-styles','dev-scripts','dev-watch'])
+gulp.task('dev',['dev-connect','dev-styles','dev-scripts','dev-watch']);
 
+gulp.task('clean',(cbk)=>{
+    del([base.dest+'**/*.*'],cbk)
+});
+
+gulp.task('usemin',()=>{
+    return gulp.src('src/index.html')
+        .pipe(usemin({
+            style:[sass({outputStyle: 'compressed'}).on('error', sass.logError)],
+            es6:[babel(),uglify()]
+        }))
+        .pipe(gulp.dest('build'));
+});
+
+gulp.task('copy-assets',function () {
+    return gulp.src(['src/assets/**'], {base: 'src/assets'})
+        .pipe(gulp.dest('build/assets/'));
+});
+
+gulp.task('test-connect', function () {
+    connect.server({
+        root: ['build/'],
+        port: 9000
+    });
+});
+
+
+
+gulp.task('build',
+    ['clean', 'usemin',  'copy-assets']
+);
+gulp.task('test',['build','test-connect']);

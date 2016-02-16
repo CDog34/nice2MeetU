@@ -1,5 +1,5 @@
 'use strict';
-particlesJS.load('duang', 'pc.json');
+particlesJS.load('duang', 'assets/pc.json');
 
 class tagSlide{
 
