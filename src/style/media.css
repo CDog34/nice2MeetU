@@ -1,11 +1,25 @@
 @media (max-width: 767px){
-  .headline {
-    position: relative;
-    margin-top: 5em;
+  #section1{
+      overflow-y: scroll!important;
+
+
+    #duang{
+        display:none;
+    }
+    .headline {
+       position: relative;
+       margin-bottom: 5em;
+        transform: translate(0,0)!important;
+        top:10% !important;
+        left: 0 !important;
+
+
+     }
+          ul{
+         padding-left: 0;
+    }
   }
-  ul{
-    padding-left: 0;
-  }
+
   .copy{
     position: fixed;
     bottom:10px;
