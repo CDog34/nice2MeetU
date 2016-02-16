@@ -67,7 +67,9 @@ gulp.task('clean',(cbk)=>{
 gulp.task('usemin',()=>{
     return gulp.src('src/index.html')
         .pipe(usemin({
-            style:[sass({outputStyle: 'compressed'}).on('error', sass.logError)],
+            style:[sass({outputStyle: 'compressed'}).on('error', sass.logError),autoprefix({
+                browsers:['> 1%','last 4 Android versions']
+            })],
             es6:[babel(),uglify()]
         }))
         .pipe(gulp.dest('build'));
