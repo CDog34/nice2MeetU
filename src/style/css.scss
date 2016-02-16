@@ -1,0 +1,148 @@
+html,body{
+	margin: 0;
+	padding:0;
+	height:100%;
+	width:100%;
+	font-family: 'Microsoft YaHei';
+	color:azure;
+
+
+	.copy{
+		position: absolute;
+		bottom: 10px;
+		width:100%;
+		text-align: center;
+		opacity:.6;
+
+
+		li h3,li a{
+			margin:0 auto;
+		}
+
+
+		a{
+			display: inline-block;
+			border-bottom:1px dotted azure;
+			transition: font-size .5s;
+
+
+			&:hover{
+				font-size: 1.5em;
+			}
+		}
+	}
+
+
+	a{
+		text-decoration: none;
+		color: azure;
+	}
+
+
+	#section1{
+		height:100%;
+		width:100%;
+		background-color: #333;
+		position: relative;
+		overflow: hidden;
+
+		#duang{
+			height: 100%;
+			width:100%;
+			position: absolute;
+			top:0;
+			left:0;
+			z-index: 0;
+
+
+			.tags{
+				font-size: 0.9em;
+				opacity: 0.5;
+				position: absolute;
+				margin: 0;
+				padding:0;
+				transition: all .8s;
+				animation:poi 1.5s 1;
+			}
+		}
+
+
+		.headline{
+			position: absolute;
+			top:50%;
+			left:50%;
+			text-align: center;
+			transform: translate(-50%, -50%);
+
+
+			.big{
+				font-size: 2em;
+			}
+
+
+			h2{
+				padding-left:100px;
+			}
+
+
+			.maybe{
+				margin-top: 40px;
+
+
+				.big{
+					font-size: 2em;
+				}
+
+
+				.linklist{
+					list-style: none;
+
+
+					a,li,.title{
+						display: inline-block;
+					}
+
+
+					a{
+						padding:5px;
+						transition: background-color .5s;
+
+
+
+						.icon {
+							font-size:2em !important;
+							padding-right:10px;
+						}
+
+
+						&:hover{
+							background-color: rgba(240, 255, 255, 0.4);
+						}
+					}
+
+
+					li{
+						margin: 5px 10px;
+					}
+				}
+			}
+		}
+
+
+
+
+	}
+
+
+
+}
+
+
+
+
+
+
+
+
+
+

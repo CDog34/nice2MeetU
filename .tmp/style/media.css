@@ -1,0 +1,9 @@
+@media (max-width: 767px) {
+  .headline {
+    position: relative;
+    margin-top: 5em; }
+  ul {
+    padding-left: 0; }
+  .copy {
+    position: fixed;
+    bottom: 10px; } }
