@@ -74,7 +74,9 @@ html,body{
 			text-align: center;
 			transform: translate(-50%, -50%);
 
-
+			.outlook{
+				color: #C54141!important;
+			}
 			.big{
 				font-size: 2em;
 			}
