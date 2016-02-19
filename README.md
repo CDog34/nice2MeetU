@@ -19,7 +19,7 @@ The newest `npm`,`Node` and `Gulp` installations are required.
 
 
 
-#Usage
+# Usage
 
 The homepage is written in `html`, styles in `scss` and scripts in `ES6` or `ES2015`.
 
