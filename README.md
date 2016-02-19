@@ -25,9 +25,11 @@ The homepage is written in `html`, styles in `scss` and scripts in `ES6` or `ES2
 
 To use `tag Slide`, You need to create a new `<script>` Block, which should contain codes like:
 
+```javascript
     new tagSlide({
     	tags:['Write','Your','Tags','Here','<del>Html supported </del']
     });
+```
 
 
 
