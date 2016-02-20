@@ -17,9 +17,7 @@ html,body{
 		z-index: 10;
 		background-color: azure;
 
-		&.fade-animation{
-			animation:fadeOut .5s;
-		}
+
 	}
 
 
@@ -98,6 +96,7 @@ html,body{
 
 				.link-list{
 					list-style: none;
+					width: 100vw;
 
 
 					a,.i-link,.title{

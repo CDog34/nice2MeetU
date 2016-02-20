@@ -1,3 +1,13 @@
+.fade-out-animation{
+  animation:fadeOut .5s;
+}
+.fade-in-animation{
+  animation:fadeIn .5s;
+}
+
+
+
+
 @keyframes poi {
   0%{
     transform: scale(0);
@@ -20,5 +30,14 @@
   }
   to{
     opacity: 0;
+  }
+}
+
+@keyframes fadeIn {
+  from{
+    opacity:0;
+  }
+  to{
+    opacity: 1;
   }
 }
