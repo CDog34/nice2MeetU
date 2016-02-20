@@ -7,30 +7,21 @@ html,body{
 	color:azure;
 
 
-	.copy{
-		position: absolute;
-		bottom: 10px;
-		width:100%;
-		text-align: center;
-		opacity:.6;
+	.loader{
+		position: fixed;
+		height: 100vh;
+		width: 100vw;
+		top: 0;
+		clear: both;
+		left: 0;
+		z-index: 10;
+		background-color: azure;
 
-
-		li h3,li a{
-			margin:0 auto;
-		}
-
-
-		a{
-			display: inline-block;
-			border-bottom:1px dotted azure;
-			transition: font-size .5s;
-
-
-			&:hover{
-				font-size: 1.5em;
-			}
+		&.fade-animation{
+			animation:fadeOut .5s;
 		}
 	}
+
 
 
 	a{
@@ -42,9 +33,10 @@ html,body{
 	#section1{
 		height:100%;
 		width:100%;
-		background-color: #333;
+		background-color: #3EC3A5;
 		position: relative;
 		overflow: hidden;
+		color:azure;
 
 		#duang{
 			height: 100%;
@@ -54,16 +46,6 @@ html,body{
 			left:0;
 			z-index: 0;
 
-
-			.tags{
-				font-size: 0.9em;
-				opacity: 0.5;
-				position: absolute;
-				margin: 0;
-				padding:0;
-				transition: all .8s;
-				animation:poi 1.5s 1;
-			}
 		}
 
 
@@ -74,21 +56,39 @@ html,body{
 			text-align: center;
 			transform: translate(-50%, -50%);
 
-			.outlook{
-				color: #C54141!important;
+			img{
+				width:200px;
+				height: 200px;
+				border-radius: 100px;
+				box-shadow: #FFF 0 0 10px 1px;
+				transition: all .5s ;
+
+				&:hover{
+					box-shadow: #FFF 0 0 25px 2px;
+				}
 			}
+
 			.big{
 				font-size: 2em;
+				color:#4B5050;
 			}
 
 
-			h2{
-				padding-left:100px;
+			h1{
+				margin-bottom:5px;
 			}
-
+			.kiseki{
+				font-style: italic;
+				font-size: 0.9em;
+				padding: 0;
+				margin:0;
+				color:rgba(128, 128, 128, 0.7)
+			}
 
 			.maybe{
 				margin-top: 40px;
+
+
 
 
 				.big{
@@ -96,26 +96,27 @@ html,body{
 				}
 
 
-				.linklist{
+				.link-list{
 					list-style: none;
 
 
-					a,li,.title{
+					a,.i-link,.title{
 						display: inline-block;
+						color:#4B5050;
+					}
+					.i-link{
+						i{
+							font-size: 3em;
+						}
+						p{
+							font-size: 1.3em;
+						}
 					}
 
 
 					a{
-						padding:5px;
+						padding:10px 50px;
 						transition: background-color .5s;
-
-
-
-						.icon {
-							font-size:2em !important;
-							padding-right:10px;
-						}
-
 
 						&:hover{
 							background-color: rgba(240, 255, 255, 0.4);
@@ -123,8 +124,8 @@ html,body{
 					}
 
 
-					li{
-						margin: 5px 10px;
+					.i-link{
+						margin: 5px 50px;
 					}
 				}
 			}

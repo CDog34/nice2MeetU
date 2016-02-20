@@ -7,7 +7,7 @@
         display:none;
     }
     .headline {
-       position: relative;
+       position: relative !important;
        margin-bottom: 5em;
         transform: translate(0,0)!important;
         top:10% !important;
@@ -15,7 +15,7 @@
 
 
      }
-          ul{
+    .link-list{
          padding-left: 0;
     }
   }
