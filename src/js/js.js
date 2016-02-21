@@ -2,7 +2,7 @@ class Misaka{
 
     constructor(ele){
         let makeIterator = (arr) => {
-            if (Object.prototype.toString.call(ele) === "[object HTMLCollection]" || Object.prototype.toString.call(ele) === "[object NodeList]"){
+            if (arr.length){
                 arr[Symbol.iterator]= () => {
                     let nextIndex = 0;
                     return{
