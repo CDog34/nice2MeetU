@@ -52,3 +52,68 @@
     box-shadow: #FFF 0 0 25px 2px;
   }
 }
+
+@keyframes titleDrop {
+  from{
+    transform: translateY(-100%);
+    opacity: 0;
+  }
+  20%{
+    transform: translateY(-100%);
+    opacity: 0;
+  }
+  23%{
+    transform: translateY(0);
+    opacity: 1;
+  }
+  25%{
+    transform: translateY(-15%);
+    opacity: 1;
+  }
+  27%{
+    transform: translateY(0);
+    opacity: 1;
+  }
+  to{
+    transform: translateY(0);
+    opacity: 1;
+  }
+}
+
+@keyframes introDrop {
+  from{
+    transform: translateX(100%);
+    opacity: 0;
+  }
+  27%{
+    transform: translateX(100%);
+    opacity: 0;
+  }
+  40%{
+    transform: translateX(0);
+    opacity: 1;
+  }
+  to{
+    transform: translateX(0);
+    opacity: 1;
+  }
+}
+@keyframes misakaDrop {
+  from{
+    transform: translateX(-100%);
+    opacity: 0;
+  }
+  40%{
+    transform: translateX(-100%);
+    opacity: 0;
+  }
+
+  70%{
+    transform: translateX(0);
+    opacity: 1;
+  }
+  to{
+    transform: translateX(0);
+    opacity: .8;
+  }
+}
