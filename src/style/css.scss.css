@@ -20,6 +20,47 @@ html,body{
 
 
 	}
+	nav.page-nav{
+		position: fixed;
+		bottom:2em;
+		z-index:10;
+		transform: translateX(-50%);
+		left:50%;
+
+		a{
+			display: inline-block;
+			position: relative;
+			background-color: azure;
+			width:15px;
+			height: 15px;
+			border-radius:15px;
+			margin: 0px;
+			transition:all .7s;
+			outline:none;
+
+			p{
+				opacity: 0;
+				position: absolute;
+				top:-400%;
+				transform: translate(-50%,50%);
+				left:50%;
+				text-align: center;
+				width:20px;
+				transition:all .5s;
+
+
+			}
+
+
+		}
+		&:hover{
+			p{
+				opacity: 1;
+				transform: translateX(-50%);
+			}
+
+		}
+	}
 
 
 
@@ -39,6 +80,24 @@ html,body{
 			position: absolute;
 			top:0;
 			transition: all .7s;
+
+			.center{
+				position: absolute;
+				top:50%;
+				left:50%;
+				text-align: center;
+				transform: translate(-50%, -50%);
+			}
+			.in-process{
+				color:#7F9194;
+				font-size: 1em;
+
+				i{
+					display: block;
+					margin-top: 10px;
+					font-size: 2em;
+				}
+			}
 		}
 		#section1{
 			left:0;
@@ -46,16 +105,6 @@ html,body{
 			position: relative;
 			overflow: hidden;
 			color:azure;
-
-			#duang{
-				height: 100%;
-				width:100%;
-				position: absolute;
-				top:0;
-				left:0;
-				z-index: 0;
-
-			}
 
 
 			.headline{
@@ -148,25 +197,24 @@ html,body{
 
 		#section2{
 			left:100vw;
-			.center{
-				position: absolute;
-				top:50%;
-				left:50%;
-				text-align: center;
-				transform: translate(-50%, -50%);
-			}
-			.in-process{
-				color:#7F9194;
-				font-size: 1em;
-
-				i{
-					display: block;
-					margin-top: 10px;
-					font-size: 2em;
-				}
-			}
-
 		}
+
+
+		#section3{
+			left:200vw;
+		}
+
+
+		#section4{
+			left:300vw;
+		}
+
+
+		#section5{
+			left:400vw;
+		}
+
+
 	}
 
 	.home-showing{
@@ -174,12 +222,48 @@ html,body{
 			background-color: #3EC3A5;
 			transform: translate(0,0);
 		}
+		.nav-home{
+			width:40px;
+		}
 	}
 
 	.i-showing{
 		#main{
 			background-color: #78EAFD;
 			transform: translate(-100vw,0);
+		}
+		.nav-i{
+			width:40px;
+		}
+	}
+
+	.skill-showing{
+		#main{
+			background-color: #FF86DA;
+			transform: translate(-200vw,0);
+		}
+		.nav-skill{
+			width:40px;
+		}
+	}
+
+	.link-showing{
+		#main{
+			background-color: #485ED0;
+			transform: translate(-300vw,0);
+		}
+		.nav-link{
+			width:40px;
+		}
+	}
+
+	.work-showing{
+		#main{
+			background-color: #FB8166;
+			transform: translate(-400vw,0);
+		}
+		.nav-work{
+			width:40px;
 		}
 	}
 

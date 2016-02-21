@@ -139,6 +139,9 @@ class Misaka{
             case 'l':
                 body.removeAllClass().addClass('link-showing');
                 break;
+            case 'w':
+                body.removeAllClass().addClass('work-showing');
+                break;
             default:
                 window.location.hash='#!/h';
                 body.addClass('home-showing');
