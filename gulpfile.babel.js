@@ -7,6 +7,7 @@ import babel from 'gulp-babel';
 import del from 'del';
 import usemin from 'gulp-usemin';
 import uglify from 'gulp-uglify';
+import htmlminify from 'gulp-html-minify';
 
 
 let base={
@@ -72,8 +73,11 @@ gulp.task('usemin',()=>{
             })],
             es6:[babel(),uglify()]
         }))
-        .pipe(gulp.dest('build'));
+        .pipe(htmlminify())
+        .pipe(gulp.dest('build/'));
 });
+
+
 
 gulp.task('copy-assets',function () {
     return gulp.src(['src/assets/**'], {base: 'src/assets'})
