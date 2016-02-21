@@ -2,8 +2,7 @@ class Misaka{
 
     constructor(ele){
         let makeIterator = (arr) => {
-
-            if (Object.prototype.toString.call(ele) === "[object HTMLCollection]"){
+            if (Object.prototype.toString.call(ele) === "[object HTMLCollection]" || Object.prototype.toString.call(ele) === "[object NodeList]"){
                 arr[Symbol.iterator]= () => {
                     let nextIndex = 0;
                     return{
@@ -146,7 +145,6 @@ class Misaka{
                 break;
 
         }
-        console.log(hash)
     };
     window.onhashchange=hashHandler;
 
