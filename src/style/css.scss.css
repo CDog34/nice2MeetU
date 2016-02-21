@@ -5,6 +5,7 @@ html,body{
 	width:100%;
 	font-family: 'Microsoft YaHei';
 	color:azure;
+	overflow: hidden;
 
 
 	.loader{
@@ -27,113 +28,162 @@ html,body{
 		color: azure;
 	}
 
+	#main{
+		height: 100vh;
+		width:500vw;
+		transition: all .7s;
 
-	#section1{
-		height:100%;
-		width:100%;
-		background-color: #3EC3A5;
-		position: relative;
-		overflow: hidden;
-		color:azure;
-
-		#duang{
-			height: 100%;
-			width:100%;
+		section{
+			height:100vh;
+			width:100vw;
 			position: absolute;
 			top:0;
-			left:0;
-			z-index: 0;
-
+			transition: all .7s;
 		}
+		#section1{
+			left:0;
+
+			position: relative;
+			overflow: hidden;
+			color:azure;
+
+			#duang{
+				height: 100%;
+				width:100%;
+				position: absolute;
+				top:0;
+				left:0;
+				z-index: 0;
+
+			}
 
 
-		.headline{
-			position: absolute;
-			top:50%;
-			left:50%;
-			text-align: center;
-			transform: translate(-50%, -50%);
+			.headline{
+				position: absolute;
+				top:50%;
+				left:50%;
+				text-align: center;
+				transform: translate(-50%, -50%);
 
-			img{
-				width:200px;
-				height: 200px;
-				border-radius: 100px;
-				box-shadow: #FFF 0 0 10px 1px;
-				transition: all .5s ;
+				img{
+					width:200px;
+					height: 200px;
+					border-radius: 100px;
+					box-shadow: #FFF 0 0 10px 1px;
+					transition: all .5s ;
 
-				&:hover{
-					box-shadow: #FFF 0 0 25px 2px;
+					&:hover{
+						box-shadow: #FFF 0 0 25px 2px;
+					}
 				}
-			}
-
-			.big{
-				font-size: 2em;
-				color:#4B5050;
-			}
-
-
-			h1{
-				margin-bottom:5px;
-			}
-			.kiseki{
-				font-style: italic;
-				font-size: 0.9em;
-				padding: 0;
-				margin:0;
-				color:rgba(128, 128, 128, 0.7)
-			}
-
-			.maybe{
-				margin-top: 40px;
-
-
-
 
 				.big{
 					font-size: 2em;
+					color:#4B5050;
 				}
 
 
-				.link-list{
-					list-style: none;
-					width: 100vw;
+				h1{
+					margin-bottom:5px;
+				}
+				.kiseki{
+					font-style: italic;
+					font-size: 0.9em;
+					padding: 0;
+					margin:0;
+					color:rgba(128, 128, 128, 0.7)
+				}
+
+				.maybe{
+					margin-top: 40px;
 
 
-					a,.i-link,.title{
-						display: inline-block;
-						color:#4B5050;
-					}
-					.i-link{
-						i{
-							font-size: 3em;
-						}
-						p{
-							font-size: 1.3em;
-						}
-					}
 
 
-					a{
-						padding:10px 50px;
-						transition: background-color .5s;
-
-						&:hover{
-							background-color: rgba(240, 255, 255, 0.4);
-						}
+					.big{
+						font-size: 2em;
 					}
 
 
-					.i-link{
-						margin: 5px 50px;
+					.link-list{
+						list-style: none;
+						width: 100vw;
+
+
+						a,.i-link,.title{
+							display: inline-block;
+							color:#4B5050;
+						}
+						.i-link{
+							i{
+								font-size: 3em;
+							}
+							p{
+								font-size: 1.3em;
+							}
+						}
+
+
+						a{
+							padding:10px 50px;
+							transition: background-color .5s;
+
+							&:hover{
+								background-color: rgba(240, 255, 255, 0.4);
+							}
+						}
+
+
+						.i-link{
+							margin: 5px 50px;
+						}
 					}
 				}
 			}
+
+
+
+
 		}
 
+		#section2{
+			left:100vw;
+			.center{
+				position: absolute;
+				top:50%;
+				left:50%;
+				text-align: center;
+				transform: translate(-50%, -50%);
+			}
+			.in-process{
+				color:#7F9194;
+				font-size: 1em;
 
+				i{
+					display: block;
+					margin-top: 10px;
+					font-size: 2em;
+				}
+			}
 
-
+		}
 	}
+
+	.home-showing{
+		#main{
+			background-color: #3EC3A5;
+			transform: translate(0,0);
+		}
+	}
+
+	.i-showing{
+		#main{
+			background-color: #78EAFD;
+			transform: translate(-100vw,0);
+		}
+	}
+
+
 
 
 

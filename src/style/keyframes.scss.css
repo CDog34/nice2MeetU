@@ -4,6 +4,9 @@
 .fade-in-animation{
   animation:fadeIn .5s;
 }
+.avatar-animation{
+  animation:avatarShadow 1s ease infinite alternate;
+}
 
 
 
@@ -39,5 +42,13 @@
   }
   to{
     opacity: 1;
+  }
+}
+@keyframes avatarShadow {
+  from{
+    box-shadow: #FFF 0 0 10px 1px;
+  }
+  to{
+    box-shadow: #FFF 0 0 25px 2px;
   }
 }
