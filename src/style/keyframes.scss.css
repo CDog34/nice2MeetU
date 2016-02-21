@@ -117,3 +117,93 @@
     opacity: .8;
   }
 }
+@keyframes skillFadeIn {
+  from{
+    opacity: 0;
+  }
+  18%{
+    opacity: 0;
+  }
+
+  30%{
+    opacity: 1;
+  }
+}
+@keyframes skillWrapperFadeIn {
+  from{
+    width: 0;
+  }
+  30%{
+    width: 0;
+  }
+
+  50%{
+    width: 100%;
+  }
+}
+@keyframes skillInnerFadeIn {
+  from{
+    width: 100%;
+  }
+  50%{
+    width: 100%;
+  }
+
+  70%{
+    width: 0;
+  }
+}
+@keyframes workFadeIn {
+  from{
+    opacity:0;
+  }
+  32%{
+    opacity:0;
+  }
+
+  100%{
+    opacity:1;
+  }
+}
+
+@keyframes titleDrop2 {
+  from {
+    transform: translate(-50%, -100%);
+    opacity: 0;
+  }
+  20% {
+    transform: translate(-50%, -100%);
+    opacity: 0;
+  }
+  23% {
+    transform: translate(-50%, 0);
+    opacity: 1;
+  }
+  25% {
+    transform: translate(-50%, -15%);
+    opacity: 1;
+  }
+  27% {
+    transform: translate(-50%, 0);
+    opacity: 1;
+  }
+  to {
+    transform: translate(-50%, 0);
+    opacity: 1;
+  }
+}
+
+@keyframes linkFade {
+  from {
+    transform: scale(.5);
+    opacity: 0;
+  }
+  27% {
+    transform: scale(.5);
+    opacity: 0;
+  }
+  50% {
+    transform: scale(1);
+    opacity: 1;
+  }
+}

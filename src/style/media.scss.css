@@ -1,22 +1,99 @@
 @media (max-width: 767px){
-  #section1{
-      overflow-y: scroll!important;
+  section {
+    overflow-y: scroll !important;
+    padding-bottom: 50px;
+    .section-title{
+      padding-top: 50px;
+      margin: 10px auto;
+      text-align: center;
+      position: relative !important;
+      left:0 !important;
+      top:0 !important;
+      transform: translateX(0)!important;
 
+      h1{
+        font-size: 1.5em !important;
+      }
+      h2{
+        font-size: 1em !important;
+      }
 
-    #duang{
-        display:none;
     }
+
+    .page-next{
+      position: relative !important;
+      color: #333;
+      font-size: 1em;
+      right: 0 !important;
+      margin-bottom: 60px !important;
+    }
+
+  }
+  #section1{
     .headline {
        position: relative !important;
        margin-bottom: 5em;
         transform: translate(0,0)!important;
-        top:10% !important;
+        top:5% !important;
         left: 0 !important;
 
 
      }
     .link-list{
          padding-left: 0;
+    }
+  }
+  #section2{
+    .intro{
+      position: relative !important;
+      padding: 10px 50px !important;
+      left:0 !important;
+      top:0 !important;
+      font-size: .8em !important;
+    }
+    img{
+      display:none;
+    }
+
+  }
+  #section3{
+    .container{
+      padding:10px!important;
+
+      .skill-list{
+        width:100% !important;
+
+        p{
+          font-size:1em !important;
+        }
+      }
+    }
+  }
+
+  #section4{
+    .link-list{
+      position:relative !important;
+      top:0 !important;
+      a{
+        padding:10px;
+        vertical-align: top;
+      }
+      p.link-title{
+        font-size: 1em !important;
+      }
+    }
+  }
+
+
+
+  #section5{
+    .center{
+      position:relative!important;
+      top: 0 !important;
+      left: 0 !important;
+      transform: translate(0, 0) !important;
+      padding-top:100px;
+      margin-bottom: 100px;
     }
   }
 
