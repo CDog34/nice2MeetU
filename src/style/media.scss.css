@@ -84,6 +84,15 @@
     }
   }
 
+  .link-showing{
+
+    section#section4{
+      div.section-title{
+        animation: titleDropMobile 5s !important; ;
+      }
+    }
+  }
+
 
 
   #section5{
