@@ -8,6 +8,7 @@ import del from 'del';
 import usemin from 'gulp-usemin';
 import uglify from 'gulp-uglify';
 import htmlminify from 'gulp-html-minify';
+import 'babel-polyfill';
 
 
 let base={
@@ -42,7 +43,10 @@ gulp.task('dev-styles',()=>{
 gulp.task('dev-scripts',()=>{
     return gulp.src(scriptBase.src)
         .pipe(plumber())
-        .pipe(babel())
+        .pipe(babel({
+            presets: ['es2015'],
+            plugins: ["babel-polyfill"]
+        }))
         .pipe(gulp.dest(scriptBase.devDest))
         .pipe(connect.reload());
 

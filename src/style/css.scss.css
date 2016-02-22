@@ -6,6 +6,7 @@ html,body{
 	font-family: 'Microsoft YaHei';
 	color:azure;
 	overflow: hidden;
+	transition: background-color .7s;
 
 
 	.loader{
@@ -73,6 +74,7 @@ html,body{
 		height: 100vh;
 		width:500vw;
 		transition: all .7s;
+		overflow-y: hidden;
 
 		section{
 			height:100vh;
@@ -400,8 +402,9 @@ html,body{
 	}
 
 	.home-showing{
+		background-color: #3EC3A5;
 		#main{
-			background-color: #3EC3A5;
+
 			transform: translate(0,0);
 		}
 		.nav-home{
@@ -410,8 +413,9 @@ html,body{
 	}
 
 	.i-showing{
+		background-color: #78EAFD;
 		#main{
-			background-color: #78EAFD;
+
 			transform: translate(-100vw,0);
 
 			section#section2{
@@ -434,8 +438,9 @@ html,body{
 	}
 
 	.skill-showing{
+		background-color: #FF86DA;
 		#main{
-			background-color: #FF86DA;
+
 			transform: translate(-200vw,0);
 		}
 		.nav-skill{
@@ -463,8 +468,9 @@ html,body{
 	}
 
 	.link-showing{
+		background-color: #485ED0;
 		#main{
-			background-color: #485ED0;
+
 			transform: translate(-300vw,0);
 		}
 		.nav-link{
@@ -481,8 +487,9 @@ html,body{
 	}
 
 	.work-showing{
+		background-color: #FB8166;
 		#main{
-			background-color: #FB8166;
+
 			transform: translate(-400vw,0);
 		}
 		.nav-work{

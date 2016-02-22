@@ -30,23 +30,51 @@ class Misaka{
 
         };
         this[0]=makeIterator(ele);
+
+
+
+    }
+
+    getAnimationed(){
+    let div = document.createElement('div'),
+        style = div.style,
+        animationNames = ['animation','WebkitAnimation','OAnimation','msAnimation','MozAnimation'],
+        animationName = (() => {
+            for (let key of animationNames) {
+                if ( style[key] !== undefined ) return key;
+            }
+            return false;
+        })(),
+        aniEndName = {
+            animation : 'animationend',
+            WebkitAnimation : 'webkitAnimationEnd',
+            OAnimation : 'oAnimationEnd',
+            msAnimation : 'MSAnimationEnd',
+            MozAnimation : 'mozAnimationEnd'
+        }[ animationName ];
+    div = style = animationNames = animationName = null;
+    return aniEndName;
     }
 
     fadeOut(cbk){
         let fadeDone=0;
+
         let itemDone = () => {
+
             fadeDone++;
             if (fadeDone == this[0].length && cbk) cbk();
         };
         for (let ele of this[0]){
+
             ele.classList.add('fade-out-animation');
             let afterOut=()=>{
+
                 ele.classList.remove('fade-out-animation');
                 ele.style.display='none';
-                ele.removeEventListener("animationend",afterOut);
+                ele.removeEventListener(this.getAnimationed(),afterOut);
                 itemDone();
             };
-            ele.addEventListener("animationend", afterOut)
+            ele.addEventListener(this.getAnimationed(), afterOut);
         }
         return this;
 
@@ -62,6 +90,7 @@ class Misaka{
             ele.removeAttribute('style');
             ele.style.display=dsp;
             ele.classList.add('fade-in-animation');
+
             let afterIn=()=>{
                 ele.classList.remove('fade-in-animation');
                 ele.removeEventListener("animationend",afterIn);
