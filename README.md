@@ -14,7 +14,7 @@ The newest `npm`,`Node` and `Gulp` installations are required.
 
 1. Clone this Repository to your local computer
 2. run `npm install`
-3. run `gulp dev` to start developing server
+3. run `gulp dev` to start develope server
 4. Go to `http://localhost:8888` , see the page.
 
 
@@ -22,6 +22,15 @@ The newest `npm`,`Node` and `Gulp` installations are required.
 # Usage
 
 The homepage is written in `html`, `scss` and  `ES6` or `ES2015`.
+
+
+# Build & Test
+Run `gulp build` to start the build task, and if you run `gulp test`, a Test server will listen on the port 9000 after the build task, to see if all the things are built properly.
+
+
+
+# Deploy
+All the files are in the `build` folder. just copy this folder to your web server.
 
 
 # License
