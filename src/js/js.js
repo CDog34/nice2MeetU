@@ -20,6 +20,7 @@ class Misaka{
 
         };
         this[0]=makeIterator(ele);
+        this.i18nList={};
 
 
 
@@ -147,12 +148,20 @@ class Misaka{
     }
 
     i18n(lang){
-        Misaka.ajax({url:"./assets/i18n/"+lang+".json"},(txt)=>{
-            let _=JSON.parse(txt);
+        lang=lang.toLowerCase();
+        if (!this.i18nList[lang]){
+            Misaka.ajax({url:"./assets/i18n/"+lang+".json"},(txt)=>{
+                this.i18nList[lang]=JSON.parse(txt);
+                for (let ele of this[0]){
+                    ele.innerHTML=this.i18nList[lang][ele.getAttribute('data-i18n')] ? _[ele.getAttribute('data-i18n')] : ele.innerHTML;
+                }
+            });
+        }else{
             for (let ele of this[0]){
-                ele.innerHTML=_[ele.getAttribute('data-i18n')] ? _[ele.getAttribute('data-i18n')] : ele.innerHTML;
+                ele.innerHTML=this.i18nList[lang][ele.getAttribute('data-i18n')] ? _[ele.getAttribute('data-i18n')] : ele.innerHTML;
             }
-        });
+        }
+
 
     }
 
