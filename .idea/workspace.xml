@@ -1,9 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="fcfd0bff-9ecb-4ea6-9bbe-d3e50eb3f5b2" name="Default" comment="">
+    <list default="true" id="fcfd0bff-9ecb-4ea6-9bbe-d3e50eb3f5b2" name="Default" comment="i18n">
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/js/js.js" afterPath="$PROJECT_DIR$/src/js/js.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/build/js.js" afterPath="$PROJECT_DIR$/build/js.js" />
     </list>
     <ignored path="cdog.em.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -58,7 +58,7 @@
         <entry file="file://$PROJECT_DIR$/build/js.js">
           <provider selected="true" editor-type-id="text-editor">
             <state vertical-scroll-proportion="-0.0">
-              <caret line="0" column="65268" selection-start-line="0" selection-start-column="65258" selection-end-line="0" selection-end-column="65265" />
+              <caret line="0" column="65268" selection-start-line="0" selection-start-column="65638" selection-end-line="0" selection-end-column="65645" />
               <folding />
             </state>
           </provider>
@@ -107,7 +107,7 @@
       <file leaf-file-name="zh-tw.json" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/assets/i18n/zh-tw.json">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.70414203">
+            <state vertical-scroll-proportion="0.72324723">
               <caret line="43" column="19" selection-start-line="43" selection-start-column="19" selection-end-line="43" selection-end-column="19" />
               <folding />
             </state>
@@ -470,12 +470,6 @@
       <option name="number" value="Default" />
       <updated>1451209610757</updated>
     </task>
-    <task id="LOCAL-00004" summary="Edit some tags">
-      <created>1451284256277</created>
-      <option name="number" value="00004" />
-      <option name="project" value="LOCAL" />
-      <updated>1451284256277</updated>
-    </task>
     <task id="LOCAL-00005" summary="font size fix">
       <created>1451288250046</created>
       <option name="number" value="00005" />
@@ -764,21 +758,27 @@
       <option name="project" value="LOCAL" />
       <updated>1456847321955</updated>
     </task>
-    <option name="localTasksCounter" value="53" />
+    <task id="LOCAL-00053" summary="i18n">
+      <created>1456852435468</created>
+      <option name="number" value="00053" />
+      <option name="project" value="LOCAL" />
+      <updated>1456852435468</updated>
+    </task>
+    <option name="localTasksCounter" value="54" />
     <servers />
   </component>
   <component name="ToolWindowManager">
     <frame x="0" y="0" width="1440" height="900" extended-state="0" />
-    <editor active="true" />
+    <editor active="false" />
     <layout>
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.24031007" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Project" active="true" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.24031007" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32891566" sideWeight="0.5" order="8" side_tool="false" content_ui="tabs" />
-      <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.32650602" sideWeight="0.50528544" order="10" side_tool="true" content_ui="tabs" />
+      <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.28433734" sideWeight="0.50528544" order="10" side_tool="true" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32891566" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
-      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.32650602" sideWeight="0.4947146" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32650602" sideWeight="0.4947146" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
-      <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.28433734" sideWeight="0.49753347" order="9" side_tool="false" content_ui="tabs" />
+      <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.28433734" sideWeight="0.4947146" order="9" side_tool="false" content_ui="tabs" />
       <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
       <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
@@ -1283,7 +1283,7 @@
     <entry file="file://$PROJECT_DIR$/build/js.js">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="-0.0">
-          <caret line="0" column="65268" selection-start-line="0" selection-start-column="65258" selection-end-line="0" selection-end-column="65265" />
+          <caret line="0" column="65268" selection-start-line="0" selection-start-column="65638" selection-end-line="0" selection-end-column="65645" />
           <folding />
         </state>
       </provider>
@@ -1376,7 +1376,7 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/assets/i18n/zh-tw.json">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.70414203">
+        <state vertical-scroll-proportion="0.72324723">
           <caret line="43" column="19" selection-start-line="43" selection-start-column="19" selection-end-line="43" selection-end-column="19" />
           <folding />
         </state>
