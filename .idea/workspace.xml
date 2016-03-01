@@ -1,13 +1,10 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="fcfd0bff-9ecb-4ea6-9bbe-d3e50eb3f5b2" name="Default" comment="i18n">
+    <list default="true" id="fcfd0bff-9ecb-4ea6-9bbe-d3e50eb3f5b2" name="Default" comment="">
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/build/css.css" afterPath="$PROJECT_DIR$/build/css.css" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/build/js.js" afterPath="$PROJECT_DIR$/build/js.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/gulpfile.babel.js" afterPath="$PROJECT_DIR$/gulpfile.babel.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/js/js.js" afterPath="$PROJECT_DIR$/src/js/js.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/style/css.scss.css" afterPath="$PROJECT_DIR$/src/style/css.scss.css" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/build/assets/i18n/en.json" afterPath="$PROJECT_DIR$/build/assets/i18n/en.json" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/assets/i18n/en.json" afterPath="$PROJECT_DIR$/src/assets/i18n/en.json" />
     </list>
     <ignored path="cdog.em.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -48,11 +45,11 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="en.json" pinned="false" current-in-tab="false">
+      <file leaf-file-name="en.json" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/assets/i18n/en.json">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="-5.625">
-              <caret line="9" column="20" selection-start-line="0" selection-start-column="0" selection-end-line="47" selection-end-column="1" />
+            <state vertical-scroll-proportion="0.5811808">
+              <caret line="21" column="22" selection-start-line="21" selection-start-column="22" selection-end-line="21" selection-end-column="22" />
               <folding />
             </state>
           </provider>
@@ -88,10 +85,10 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="gulpfile.babel.js" pinned="false" current-in-tab="true">
+      <file leaf-file-name="gulpfile.babel.js" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/gulpfile.babel.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.37102473">
+            <state vertical-scroll-proportion="0.0">
               <caret line="50" column="0" selection-start-line="50" selection-start-column="0" selection-end-line="50" selection-end-column="0" />
               <folding />
             </state>
@@ -194,7 +191,6 @@
         <option value="$PROJECT_DIR$/src/js/polyfill.js" />
         <option value="$PROJECT_DIR$/.tmp/js/js.js" />
         <option value="$PROJECT_DIR$/src/assets/i18n/zh-cn.json" />
-        <option value="$PROJECT_DIR$/src/assets/i18n/en.json" />
         <option value="$PROJECT_DIR$/src/index.html" />
         <option value="$PROJECT_DIR$/src/assets/i18n/zh-TW.json" />
         <option value="$PROJECT_DIR$/src/assets/i18n/zh-CN.json" />
@@ -202,6 +198,7 @@
         <option value="$PROJECT_DIR$/src/js/js.js" />
         <option value="$PROJECT_DIR$/src/style/css.scss.css" />
         <option value="$PROJECT_DIR$/gulpfile.babel.js" />
+        <option value="$PROJECT_DIR$/src/assets/i18n/en.json" />
       </list>
     </option>
   </component>
@@ -528,12 +525,6 @@
       <option name="number" value="Default" />
       <updated>1451209610757</updated>
     </task>
-    <task id="LOCAL-00002" summary="Tag added">
-      <created>1451282902823</created>
-      <option name="number" value="00002" />
-      <option name="project" value="LOCAL" />
-      <updated>1451282902823</updated>
-    </task>
     <task id="LOCAL-00003" summary="Padding fix">
       <created>1451282962520</created>
       <option name="number" value="00003" />
@@ -822,7 +813,13 @@
       <option name="project" value="LOCAL" />
       <updated>1456846479365</updated>
     </task>
-    <option name="localTasksCounter" value="51" />
+    <task id="LOCAL-00051" summary="i18n">
+      <created>1456847123484</created>
+      <option name="number" value="00051" />
+      <option name="project" value="LOCAL" />
+      <updated>1456847123484</updated>
+    </task>
+    <option name="localTasksCounter" value="52" />
     <servers />
   </component>
   <component name="ToolWindowManager">
@@ -1346,14 +1343,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/assets/i18n/en.json">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-5.625">
-          <caret line="9" column="20" selection-start-line="0" selection-start-column="0" selection-end-line="47" selection-end-column="1" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/index.html">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="-3.125">
@@ -1434,8 +1423,16 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/gulpfile.babel.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.37102473">
+        <state vertical-scroll-proportion="0.0">
           <caret line="50" column="0" selection-start-line="50" selection-start-column="0" selection-end-line="50" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/assets/i18n/en.json">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.5811808">
+          <caret line="21" column="22" selection-start-line="21" selection-start-column="22" selection-end-line="21" selection-end-column="22" />
           <folding />
         </state>
       </provider>
