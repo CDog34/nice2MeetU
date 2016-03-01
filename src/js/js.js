@@ -14,17 +14,7 @@ class Misaka{
                     }
                 }
             }else{
-                arr[Symbol.iterator]= () => {
-                    let nextIndex = 0;
-                    return {
-                        next: function () {
-                            nextIndex += 1;
-                            return nextIndex < 1 ?
-                            {value: arr} :
-                            {done: true};
-                        }
-                    }
-                }
+                arr=[arr];
             }
             return arr;
 
@@ -34,6 +24,23 @@ class Misaka{
 
 
     }
+
+    static ajax(option,cbk){
+        let xhr=new XMLHttpRequest();
+        let pRes = () => {
+            if (xhr.readyState == 4){
+                if (xhr.status == 200){
+                    cbk(xhr.responseText);
+                }
+            }
+        };
+        xhr.open(option.method || 'get',option.url,true);
+        xhr.onreadystatechange=pRes;
+        xhr.send();
+
+    }
+
+
 
     getAnimationed(){
     let div = document.createElement('div'),
@@ -88,15 +95,15 @@ class Misaka{
         };
         for (let ele of this[0]){
             ele.removeAttribute('style');
-            ele.style.display=dsp;
+            ele.style.display='block';
             ele.classList.add('fade-in-animation');
 
             let afterIn=()=>{
                 ele.classList.remove('fade-in-animation');
-                ele.removeEventListener("animationend",afterIn);
+                ele.removeEventListener(this.getAnimationed(),afterIn);
                 itemDone();
             };
-            ele.addEventListener("animationend", afterIn)
+            ele.addEventListener(this.getAnimationed(), afterIn)
         }
         return this;
     }
@@ -119,6 +126,12 @@ class Misaka{
         }
         return this;
     }
+    toggleClass(cls){
+        for (let ele of this[0]){
+            ele.classList.toggle(cls);
+        }
+        return this;
+    }
 
     removeClass(cls){
         for (let ele of this[0]){
@@ -133,6 +146,16 @@ class Misaka{
         return this;
     }
 
+    i18n(lang){
+        Misaka.ajax({url:"./assets/i18n/"+lang+".json"},(txt)=>{
+            let _=JSON.parse(txt);
+            for (let ele of this[0]){
+                ele.innerHTML=_[ele.getAttribute('data-i18n')] ? _[ele.getAttribute('data-i18n')] : ele.innerHTML;
+            }
+        });
+
+    }
+
 
 }
 
@@ -140,6 +163,26 @@ class Misaka{
 
     let body=new Misaka(document.getElementsByTagName('body'));
     let loader=new Misaka(document.getElementsByClassName('loader'));
+    let langDisplay=false;
+    let i18n=new Misaka(document.getElementsByTagName('i18n'));
+    let languageList=new Misaka(document.getElementById('lang-list'));
+    let langBtn=new Misaka(document.getElementById('lang-btn')).click((e)=>{
+        e.stopPropagation();
+        e.preventDefault();
+        if (langDisplay){
+            languageList.fadeOut();
+            langDisplay=false;
+        }else{
+            languageList.fadeIn();
+            langDisplay=true;
+        }
+
+    });
+    let languageItem=new Misaka(document.getElementsByClassName('lang')).click((e)=>{
+        langBtn.click();
+        i18n.i18n(e.clicked.getAttribute('data-i18n-item'))
+
+    });
     let myLinks=new Misaka(document.getElementsByClassName('my-link')).click((e)=>{
         e.stopPropagation();
         e.preventDefault();
@@ -183,6 +226,12 @@ class Misaka{
 
     window.onload=()=>{
         hashHandler();
+        let localLang=navigator.language;
+        if (localLang == "zh-CN" || localLang == "zh-TW"){
+            i18n.i18n(localLang)
+        }else{
+            i18n.i18n('en');
+        }
         loader.fadeOut();
 
     };

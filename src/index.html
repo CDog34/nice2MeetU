@@ -26,12 +26,22 @@
 </head>
 <body>
 <nav class="page-nav">
-    <a href="#!/h" class="nav-anchor nav-home"><p>首页</p></a>
-    <a href="#!/i" class="nav-anchor nav-i"><p>我的</p></a>
-    <a href="#!/s" class="nav-anchor nav-skill"><p>技能</p></a>
-    <a href="#!/l" class="nav-anchor nav-link"><p>寻找</p></a>
-    <a href="#!/w" class="nav-anchor nav-work"><p>作品</p></a>
+    <a href="#!/h" class="nav-anchor nav-home"><p><i18n data-i18n="H">首页</i18n></p></a>
+    <a href="#!/i" class="nav-anchor nav-i"><p><i18n data-i18n="A">我的</i18n></p></a>
+    <a href="#!/s" class="nav-anchor nav-skill"><p><i18n data-i18n="S">技能</i18n></p></a>
+    <a href="#!/l" class="nav-anchor nav-link"><p><i18n data-i18n="F">寻找</i18n></p></a>
+    <a href="#!/w" class="nav-anchor nav-work"><p><i18n data-i18n="M">作品</i18n></p></a>
 </nav>
+<div class="language">
+
+    <ul id="lang-list">
+        <li data-i18n-item="zh-CN" class="lang">简体字</li>
+        <li data-i18n-item="zh-TW" class="lang">繁体字</li>
+        <li data-i18n-item="en" class="lang">English</li>
+    </ul>
+    <i class="fa fa-globe" id="lang-btn"></i>
+</div>
+
 <div class="loader">
     <div class="cssload-loader-inner">
         <div class="cssload-cssload-loader-line-wrap-wrap">
@@ -55,45 +65,45 @@
     <section id="section1">
         <div class="headline">
             <img class="avatar-animation" src="https://g.cdog.work/avatar/82e7b8daa8d0a8074b5dfbd632331d3a?s=300" alt="我是CDog">
-            <h1>你好&nbsp;我是<span class="big">西道</span></h1>
-            <p class="kiseki">君と出会いのことは僕たちの奇跡です〜</p>
+            <h1><i18n data-i18n="Hello, I am">你好&nbsp;我是</i18n><span class="big"><i18n data-i18n="CDog">西道</i18n></span></h1>
+            <p class="kiseki"> <i18n data-i18n="This is  our Miracle">君と出会いのことは僕たちの奇跡です〜</i18n></p>
             <div class="maybe">
                 <div class="link-list">
-                    <div class="i-link "><a href="https://blog.cdog.me" target="_blank" class='my-link' ><i class="fa fa-home"></i><p>访问我的博客</p></a></div>
-                    <div class="i-link" ><a href="#!/i" class="more-me"><i class="fa fa-info"></i><p>了解我的更多</p></a></div>
+                    <div class="i-link "><a href="https://blog.cdog.me" target="_blank" class='my-link' ><i class="fa fa-home"></i><p><i18n data-i18n="Visit my Blog">访问我的博客</i18n></p></a></div>
+                    <div class="i-link" ><a href="#!/i" class="more-me"><i class="fa fa-info"></i><p><i18n data-i18n="Learn more about me">了解我的更多</i18n></p></a></div>
                 </div>
             </div>
         </div>
     </section>
     <section id="section2">
         <div class="section-title">
-            <h1>我叫CDog</h1>
-            <h2>但是我并没有C Dog</h2>
+            <h1><i18n data-i18n="My name is CDog">我叫CDog</i18n></h1>
+            <h2><i18n data-i18n="Nice 2 see U">但是我并没有C Dog</i18n></h2>
         </div>
         <div class="intro">
-            <p>95年生,射手座</p>
-            <p>喜欢和IT相关的东西,自称技术宅</p>
-            <p>虽然有时会被人称作菊苣,但其实只是一个萌新</p>
-            <p>想和有趣的人做一些有趣的事情</p>
-            <p>已经放弃治疗的中二病,拖延症晚期</p>
-            <p>本命是左边这位←</p>
-            <p>将来的梦想是,用自己的方式来拉近二次元与三次元的距离</p>
-            <p>长者说: 闷声发大财,这是缀吼的!</p>
+            <p><i18n data-i18n="intro-l1">95年生,射手座</i18n></p>
+            <p><i18n data-i18n="intro-l2">喜欢和IT相关的东西,自称技术宅</i18n></p>
+            <p><i18n data-i18n="intro-l3">虽然有时会被人称作菊苣,但其实只是一个萌新</i18n></p>
+            <p><i18n data-i18n="intro-l4">想和有趣的人做一些有趣的事情</i18n></p>
+            <p><i18n data-i18n="intro-l5">已经放弃治疗的中二病,拖延症晚期</i18n></p>
+            <p><i18n data-i18n="intro-l6">本命是左边这位←</i18n></p>
+            <p><i18n data-i18n="intro-l7">将来的梦想是,用自己的方式来拉近二次元与三次元的距离</i18n></p>
+            <p><i18n data-i18n="intro-l8">长者说: 闷声发大财,这是缀吼的!</i18n></p>
         </div>
         <img src="https://tat.pics/v/14494713484499706317.png" alt="Misaka">
-        <div class="i-link" ><a href="#!/s" class="more-me page-next"><i class="fa fa-check-square-o"></i><p>继续了解我的技能→</p></a></div>
+        <div class="i-link" ><a href="#!/s" class="more-me page-next"><i class="fa fa-check-square-o"></i><p><i18n data-i18n="More about my skill">继续了解我的技能→</i18n></p></a></div>
 
 
     </section>
     <section id="section3">
         <div class="container">
             <div class="section-title">
-                <h1>技能熟练度</h1>
-                <h2>左侧为各单词拼写熟练度</h2>
+                <h1><i18n data-i18n="My Skills">技能熟练度</i18n></h1>
+                <h2><i18n data-i18n="S is for Skill">左侧为各单词拼写熟练度</i18n></h2>
             </div>
             <div class="skill-list">
                 <div class="skill-item skill-chinese">
-                    <p>Chinese <span>//带有上海口音的</span></p>
+                    <p>Chinese <span><i18n data-i18n="Native Speaker">//带有上海口音的</i18n></span></p>
                     <div class="skill-wrapper">
                         <div class="skill-inner" style="width:80%"></div>
                     </div>
@@ -111,86 +121,86 @@
                     </div>
                 </div>
                 <div class="skill-item skill-html">
-                    <p>HTML　<span>//语义化学习中</span></p>
+                    <p>HTML　<span><i18n data-i18n="Still learning about Semantics">//语义化学习中</i18n></span></p>
                     <div class="skill-wrapper">
                         <div class="skill-inner" style="width:90%"></div>
                     </div>
                 </div>
                 <div class="skill-item skill-css">
-                    <p>CSS <span>//不考虑兼容性的</span></p>
+                    <p>CSS <span><i18n data-i18n="Compatibility? Sounds YUMMY~">//不考虑兼容性的</i18n></span></p>
                     <div class="skill-wrapper">
                         <div class="skill-inner" style="width:80%"></div>
                     </div>
                 </div>
                 <div class="skill-item skill-javascript">
-                    <p>Javascript/Node.js <span>//今天你回调了吗</span></p>
+                    <p>Javascript/Node.js <span><i18n data-i18n="Have you Callbacked today?">//今天你回调了吗</i18n></span></p>
                     <div class="skill-wrapper">
                         <div class="skill-inner" style="width:70%"></div>
                     </div>
                 </div>
                 <div class="skill-item skill-python">
-                    <p>Python <span>//人生苦短</span></p>
+                    <p>Python <span><i18n data-i18n="Life is too short">//人生苦短</i18n></span></p>
                     <div class="skill-wrapper">
                         <div class="skill-inner" style="width:40%"></div>
                     </div>
                 </div>
                 <div class="skill-item skill-c">
-                    <p>C <span>//学校教的</span></p>
+                    <p>C <span><i18n data-i18n="Learned from school">//学校教的</i18n></span></p>
                     <div class="skill-wrapper">
                         <div class="skill-inner" style="width:10%"></div>
                     </div>
                 </div>
                 <div class="skill-item skill-java">
-                    <p>Java <span>//来一杯82年的压压惊</span></p>
+                    <p>Java <span><i18n data-i18n="Would you like to have a cup of JAVA?">//来一杯82年的压压惊</i18n></span></p>
                     <div class="skill-wrapper">
                         <div class="skill-inner" style="width:5%"></div>
                     </div>
                 </div>
             </div>
-            <div class="i-link" ><a href="#!/l" class="more-me page-next"><i class="fa fa-search"></i><p>继续寻找我的足迹→</p></a></div>
+            <div class="i-link" ><a href="#!/l" class="more-me page-next"><i class="fa fa-search"></i><p><i18n data-i18n="Find me on the Internet →">继续寻找我的足迹→</i18n></p></a></div>
 
         </div>
     </section>
     <section id="section4">
         <div class="section-title">
-            <h1>寻找 CDog</h1>
-            <h2>遇见 就是幸运</h2>
+            <h1><i18n data-i18n="My Links">寻找 CDog</i18n></h1>
+            <h2><i18n data-i18n="F is for Find">遇见 就是幸运</i18n></h2>
         </div>
         <div class="link-list">
             <a class="link-item my-link" href="https://blog.cdog.me"  target="_blank">
-                <p class="link-title" >西道の狗窝</p>
-                <p class="link-describe">我的个人博客.一只技术宅的捣鼓日志</p>
+                <p class="link-title" ><i18n data-i18n="CDog's Blog">西道の狗窝</i18n></p>
+                <p class="link-describe"><i18n data-i18n="My personal Blog">我的个人博客.一只技术宅的捣鼓日志</i18n></p>
             </a>
             <a class="link-item" href="https://github.com/CDog34" target="_blank">
                 <p class="link-title">Github</p>
-                <p class="link-describe">全球最大的同性交友社区.中的一只小透明</p>
+                <p class="link-describe"><i18n data-i18n="Follow me on Github ">全球最大的同性交友社区.中的一只小透明</i18n></p>
             </a>
             <a class="link-item" href="http://sighttp.qq.com/authd?IDKEY=402810b105f4807c0a08538d8a6b6242626e780e0a034788" target="_blank">
                 <p class="link-title">QQ</p>
-                <p class="link-describe">天朝第二无节操互联网公司.聊天工具</p>
+                <p class="link-describe"><i18n data-i18n="Chinese ICQ">天朝第二无节操互联网公司.聊天工具</i18n></p>
             </a>
             <a class="link-item" href="http://weibo.com/CDog9511" target="_blank">
-                <p class="link-title">新浪微博</p>
-                <p class="link-describe">日常无聊刷微博</p>
+                <p class="link-title"><i18n data-i18n="Sina Weibo">新浪微博</i18n></p>
+                <p class="link-describe"><i18n data-i18n="Chinese Twitter">日常无聊刷微博</i18n></p>
             </a>
             <a class="link-item" href="https://twitter.com/peter_cdog" target="_blank">
                 <p class="link-title">Twitter</p>
-                <p class="link-describe">闲着没事刷推特</p>
+                <p class="link-describe"><i18n data-i18n="Follow me on Twitter">闲着没事刷推特</i18n></p>
             </a>
 
         </div>
-        <div class="i-link" ><a href="#!/w" class="more-me page-next"><i class="fa fa-clone"></i><p>继续发现我的作品→</p></a></div>
+        <div class="i-link" ><a href="#!/w" class="more-me page-next"><i class="fa fa-clone"></i><p><i18n data-i18n="Learn more about my masterpiece">继续发现我的作品→</i18n></p></a></div>
     </section>
     <section id="section5">
         <div class="work-words center">
-            <p> <span>#生活#</span> 就是我们最好的 <span>作品</span> </p>
-            <p>期待能和你成为朋友! </p>
+            <p> <span><i18n data-i18n="life">#生活#</i18n></span> <i18n data-i18n="is our best">就是我们最好的</i18n> <span><i18n data-i18n="masterpiece">作品</i18n></span> </p>
+            <p><i18n data-i18n="Let's be Friends!">期待能和你成为朋友</i18n></p>
         </div>
         <div class="copyright">
             <p>&copy; CDog 2016</p>
             <p>本项目使用了Font Awesome图标库.遵循MIT许可协议</p>
         </div>
-        <div class="i-link" ><a href="#!/h" class="more-me page-next"><i class="fa fa-arrow-left"></i><p>回到一切开始的地方</p></a></div>
+        <div class="i-link" ><a href="#!/h" class="more-me page-next"><i class="fa fa-arrow-left"></i><p><i18n data-i18n="Back to the BEGINNING">回到一切开始的地方</i18n></p></a></div>
     </section>
 
 </div>
