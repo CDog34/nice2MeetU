@@ -153,12 +153,12 @@ class Misaka{
             Misaka.ajax({url:"./assets/i18n/"+lang+".json"},(txt)=>{
                 this.i18nList[lang]=JSON.parse(txt);
                 for (let ele of this[0]){
-                    ele.innerHTML=this.i18nList[lang][ele.getAttribute('data-i18n')] ? _[ele.getAttribute('data-i18n')] : ele.innerHTML;
+                    ele.innerHTML=this.i18nList[lang][ele.getAttribute('data-i18n')] ? this.i18nList[ele.getAttribute('data-i18n')] : ele.innerHTML;
                 }
             });
         }else{
             for (let ele of this[0]){
-                ele.innerHTML=this.i18nList[lang][ele.getAttribute('data-i18n')] ? _[ele.getAttribute('data-i18n')] : ele.innerHTML;
+                ele.innerHTML=this.i18nList[lang][ele.getAttribute('data-i18n')] ? this.i18nList[ele.getAttribute('data-i18n')] : ele.innerHTML;
             }
         }
 

@@ -1,9 +1,14 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="fcfd0bff-9ecb-4ea6-9bbe-d3e50eb3f5b2" name="Default" comment="i18n">
+    <list default="true" id="fcfd0bff-9ecb-4ea6-9bbe-d3e50eb3f5b2" name="Default" comment="">
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/build/assets/i18n/zh-CN.json" afterPath="$PROJECT_DIR$/build/assets/i18n/zh-CN.json" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/build/assets/i18n/zh-TW.json" afterPath="$PROJECT_DIR$/build/assets/i18n/zh-TW.json" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/build/js.js" afterPath="$PROJECT_DIR$/build/js.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/assets/i18n/zh-TW.json" afterPath="$PROJECT_DIR$/src/assets/i18n/zh-TW.json" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/assets/i18n/zh-cn.json" afterPath="$PROJECT_DIR$/src/assets/i18n/zh-cn.json" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/js/js.js" afterPath="$PROJECT_DIR$/src/js/js.js" />
     </list>
     <ignored path="cdog.em.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -58,7 +63,7 @@
         <entry file="file://$PROJECT_DIR$/build/js.js">
           <provider selected="true" editor-type-id="text-editor">
             <state vertical-scroll-proportion="-0.0">
-              <caret line="0" column="65268" selection-start-line="0" selection-start-column="65638" selection-end-line="0" selection-end-column="65645" />
+              <caret line="0" column="65268" selection-start-line="0" selection-start-column="65659" selection-end-line="0" selection-end-column="65666" />
               <folding />
             </state>
           </provider>
@@ -67,8 +72,8 @@
       <file leaf-file-name="js.js" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/js/js.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="-7.2222223">
-              <caret line="150" column="32" selection-start-line="150" selection-start-column="32" selection-end-line="150" selection-end-column="32" />
+            <state vertical-scroll-proportion="-12.777778">
+              <caret line="160" column="96" selection-start-line="160" selection-start-column="96" selection-end-line="160" selection-end-column="96" />
               <folding />
             </state>
           </provider>
@@ -84,11 +89,11 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="zh-cn.json" pinned="false" current-in-tab="false">
+      <file leaf-file-name="zh-cn.json" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/assets/i18n/zh-cn.json">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="-27.416666">
-              <caret line="45" column="29" selection-start-line="45" selection-start-column="29" selection-end-line="45" selection-end-column="29" />
+            <state vertical-scroll-proportion="0.8339483">
+              <caret line="47" column="0" selection-start-line="47" selection-start-column="0" selection-end-line="47" selection-end-column="0" />
               <folding />
             </state>
           </provider>
@@ -104,11 +109,11 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="zh-tw.json" pinned="false" current-in-tab="true">
+      <file leaf-file-name="zh-tw.json" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/assets/i18n/zh-tw.json">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.72324723">
-              <caret line="43" column="19" selection-start-line="43" selection-start-column="19" selection-end-line="43" selection-end-column="19" />
+            <state vertical-scroll-proportion="-15.083333">
+              <caret line="41" column="16" selection-start-line="41" selection-start-column="16" selection-end-line="41" selection-end-column="16" />
               <folding />
             </state>
           </provider>
@@ -189,7 +194,6 @@
         <option value="$PROJECT_DIR$/.babelrc" />
         <option value="$PROJECT_DIR$/src/js/polyfill.js" />
         <option value="$PROJECT_DIR$/.tmp/js/js.js" />
-        <option value="$PROJECT_DIR$/src/assets/i18n/zh-cn.json" />
         <option value="$PROJECT_DIR$/src/index.html" />
         <option value="$PROJECT_DIR$/src/assets/i18n/zh-TW.json" />
         <option value="$PROJECT_DIR$/src/assets/i18n/zh-CN.json" />
@@ -198,6 +202,8 @@
         <option value="$PROJECT_DIR$/gulpfile.babel.js" />
         <option value="$PROJECT_DIR$/src/assets/i18n/en.json" />
         <option value="$PROJECT_DIR$/src/js/js.js" />
+        <option value="$PROJECT_DIR$/src/assets/i18n/zh-tw.json" />
+        <option value="$PROJECT_DIR$/src/assets/i18n/zh-cn.json" />
       </list>
     </option>
   </component>
@@ -366,6 +372,38 @@
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="cdog.em" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="nice2MeetU" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="build" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="cdog.em" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="nice2MeetU" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="build" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="assets" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
         </subPane>
       </pane>
       <pane id="Scratches" />
@@ -469,12 +507,6 @@
       <created>1451209610757</created>
       <option name="number" value="Default" />
       <updated>1451209610757</updated>
-    </task>
-    <task id="LOCAL-00005" summary="font size fix">
-      <created>1451288250046</created>
-      <option name="number" value="00005" />
-      <option name="project" value="LOCAL" />
-      <updated>1451288250046</updated>
     </task>
     <task id="LOCAL-00006" summary="GA">
       <created>1451292002753</created>
@@ -764,7 +796,13 @@
       <option name="project" value="LOCAL" />
       <updated>1456852435468</updated>
     </task>
-    <option name="localTasksCounter" value="54" />
+    <task id="LOCAL-00054" summary="i18n">
+      <created>1456852465838</created>
+      <option name="number" value="00054" />
+      <option name="project" value="LOCAL" />
+      <updated>1456852465838</updated>
+    </task>
+    <option name="localTasksCounter" value="55" />
     <servers />
   </component>
   <component name="ToolWindowManager">
@@ -1266,8 +1304,8 @@
         <state vertical-scroll-proportion="0.7180451">
           <caret line="363" column="0" selection-start-line="363" selection-start-column="0" selection-end-line="363" selection-end-column="0" />
           <folding>
-            <marker date="1456852384000" expanded="true" signature="788:1395" placeholder="{...}" />
-            <marker date="1456852384000" expanded="true" signature="11158:11181" placeholder="{...}" />
+            <marker date="1456852513000" expanded="true" signature="788:1395" placeholder="{...}" />
+            <marker date="1456852513000" expanded="true" signature="11158:11181" placeholder="{...}" />
           </folding>
         </state>
       </provider>
@@ -1283,7 +1321,7 @@
     <entry file="file://$PROJECT_DIR$/build/js.js">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="-0.0">
-          <caret line="0" column="65268" selection-start-line="0" selection-start-column="65638" selection-end-line="0" selection-end-column="65645" />
+          <caret line="0" column="65268" selection-start-line="0" selection-start-column="65659" selection-end-line="0" selection-end-column="65666" />
           <folding />
         </state>
       </provider>
@@ -1360,24 +1398,24 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/js/js.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-7.2222223">
-          <caret line="150" column="32" selection-start-line="150" selection-start-column="32" selection-end-line="150" selection-end-column="32" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/assets/i18n/zh-cn.json">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-27.416666">
-          <caret line="45" column="29" selection-start-line="45" selection-start-column="29" selection-end-line="45" selection-end-column="29" />
+        <state vertical-scroll-proportion="-12.777778">
+          <caret line="160" column="96" selection-start-line="160" selection-start-column="96" selection-end-line="160" selection-end-column="96" />
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/assets/i18n/zh-tw.json">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.72324723">
-          <caret line="43" column="19" selection-start-line="43" selection-start-column="19" selection-end-line="43" selection-end-column="19" />
+        <state vertical-scroll-proportion="-15.083333">
+          <caret line="41" column="16" selection-start-line="41" selection-start-column="16" selection-end-line="41" selection-end-column="16" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/assets/i18n/zh-cn.json">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.8339483">
+          <caret line="47" column="0" selection-start-line="47" selection-start-column="0" selection-end-line="47" selection-end-column="0" />
           <folding />
         </state>
       </provider>
