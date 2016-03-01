@@ -82,7 +82,7 @@ html,body{
 		ul{
 			list-style: none;
 			padding-left:0;
-			font-size: .5em;
+			font-size: 12px;
 			display: none;
 
 			li{

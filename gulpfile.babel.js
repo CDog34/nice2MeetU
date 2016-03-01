@@ -54,6 +54,7 @@ gulp.task('dev-scripts',()=>{
 
 gulp.task('dev-connect',()=>{
     connect.server({
+        host:"0.0.0.0",
         port:8888,
         livereload:true,
         root:['.tmp/','src/']

@@ -227,6 +227,7 @@ class Misaka{
     window.onload=()=>{
         hashHandler();
         let localLang=navigator.language.toLowerCase();
+        console.log(localLang)
         if (localLang == "zh-cn" || localLang == "zh-tw"){
             i18n.i18n(localLang)
         }else{
