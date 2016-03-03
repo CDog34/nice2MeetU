@@ -2,7 +2,7 @@
 ![sample][1]
 
 
-nice2MeetU is CDog's Personal Front page project. Currently, Chinese only.
+nice2MeetU is CDog's Personal Front page project. With i18n support.
 
 
 # Requirement
