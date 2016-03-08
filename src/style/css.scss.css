@@ -389,18 +389,20 @@ html,body{
 				a{
 					display:inline-block;
 					width:32%;
-					margin: 20px 0;
+					margin: 10px 10px 0 0;
+					padding-bottom: 20px;
 					transition:all .5s;
 					background-color: rgba(240, 255, 255, 0.17);
 
 					.link-title{
 						font-size: 2em;
+						margin-bottom: 10px;
 					}
 					.link-describe{
 						font-size: .8em;
 					}
 					&:hover{
-						background-color: #7F9194;
+						background-color: rgba(255, 255, 255, 0.6);
 					}
 				}
 			}
@@ -437,7 +439,7 @@ html,body{
 	}
 
 	.home-showing{
-		background-color: #3EC3A5;
+		background-color: #12D2F1;;
 		#main{
 
 			transform: translate(0,0);

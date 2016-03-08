@@ -195,15 +195,12 @@
 
 @keyframes linkFade {
   from {
-    transform: scale(.5);
     opacity: 0;
   }
   27% {
-    transform: scale(.5);
     opacity: 0;
   }
   50% {
-    transform: scale(1);
     opacity: 1;
   }
 }
