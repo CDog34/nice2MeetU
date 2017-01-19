@@ -2,7 +2,7 @@
 <project version="4">
   <component name="ProjectModuleManager">
     <modules>
-      <module fileurl="file://$PROJECT_DIR$/.idea/cdog.em.iml" filepath="$PROJECT_DIR$/.idea/cdog.em.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/nice2meetu.iml" filepath="$PROJECT_DIR$/.idea/nice2meetu.iml" />
     </modules>
   </component>
 </project>
