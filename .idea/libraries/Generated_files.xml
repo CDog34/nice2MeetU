@@ -4,6 +4,7 @@
       <root url="file://$PROJECT_DIR$/js/js.min-compiled.js" />
       <root url="file://$PROJECT_DIR$/js/js-compiled.js" />
     </CLASSES>
+    <JAVADOC />
     <SOURCES />
   </library>
 </component>
