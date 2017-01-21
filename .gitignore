@@ -3,6 +3,8 @@
 
 # IntelliJ project files
 .idea
+.idea/workspace.xml
+
 *.iml
 out
 gen### Node template
