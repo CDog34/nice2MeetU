@@ -54,7 +54,10 @@ gulp.task('dev-scripts', () => {
 
 gulp.task('build-scss', () => {
     return gulp.src([styleBase.src])
-        .pipe(sass().on('error', sass.logError))
+        .pipe(sass({outputStyle: 'compressed'}).on('error', sass.logError))
+        .pipe(autoprefix({
+            browsers: ['> 1%', 'last 4 Android versions']
+        }))
         .pipe(gulp.dest(styleBase.devDest));
 });
 
@@ -79,9 +82,7 @@ gulp.task('clean', (cbk) => {
 gulp.task('usemin', ['build-scss'], () => {
     return gulp.src('src/index.html')
         .pipe(usemin({
-            style: [autoprefix({
-                browsers: ['> 1%', 'last 4 Android versions']
-            })],
+            style: [],
             es6: [babel(), uglify()]
         }))
         .pipe(htmlminify())
