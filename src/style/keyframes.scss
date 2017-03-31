@@ -1,9 +1,29 @@
-.fade-out-animation{
-  animation:fadeOut .5s;
+.fade-out-animation {
+  animation: fadeOut .5s;
 }
-.fade-in-animation{
-  animation:fadeIn .5s;
+
+.fade-in-animation {
+  animation: fadeIn .5s;
 }
-.avatar-animation{
-  animation:avatarShadow 1s ease infinite alternate;
+
+.avatar-animation {
+  animation: avatarShadow 1s ease infinite alternate;
+}
+
+@keyframes fadeOut {
+  from {
+    opacity: 1;
+  }
+  to {
+    opacity: 0;
+  }
+}
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
 }
