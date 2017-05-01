@@ -37,6 +37,13 @@ class Rail {
     if (!!idx) return this.ele[idx];
     return this.ele;
   }
+
+  setStyle(styleName, styStr) {
+    for (let item of this.ele) {
+      item.style[styleName] = styStr;
+    }
+    return this;
+  }
 }
 window.$ = (selector) => {
   return Rail.getInstance(selector);
