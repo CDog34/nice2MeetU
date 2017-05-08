@@ -20,13 +20,22 @@ html, body {
   }
   .bio {
     color: rgba(51, 51, 51, 0.54);
-    display: block;
     margin-top: 8px;
-    font-weight: 300;
-    letter-spacing: 1.4px;
-    opacity: 0;
-    transition: all 1s .5s, transform .5s ease;
-    &.ready {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    > span {
+      font-weight: 300;
+      letter-spacing: 1.4px;
+      opacity: 0;
+      transition: all 1s .5s;
+
+    }
+    > span.emphasis {
+      font-size: 20px;
+      letter-spacing: 2px;
+    }
+    &.ready > span {
       opacity: 1;
     }
   }
@@ -40,7 +49,7 @@ html, body {
       font-weight: 100;
       transform: scale(1.1);
       opacity: 0;
-      transition: opacity 1s, transform .5s ease;
+      transition: opacity 1s;
       &.ready {
         opacity: 1;
         transform: scale(1);
@@ -62,19 +71,19 @@ html, body {
           transform: none;
         }
         &:nth-child(1) {
-          transition: all 1s 1s
+          transition: all 1s 7s
         }
         &:nth-child(2) {
-          transition: all 1s 1.5s
+          transition: all 1s 7.5s
         }
         &:nth-child(3) {
-          transition: all 1s 2s
+          transition: all 1s 8s
         }
         &:nth-child(4) {
-          transition: all 1s 2.5s
+          transition: all 1s 8.5s
         }
         &:nth-child(5) {
-          transition: all 1s 3s
+          transition: all 1s 9s
         }
         a {
           font-size: 12px;
